@@ -1,0 +1,37 @@
+{
+    "searchProduct": [
+        "Laptop",
+        "Computers"
+    ],
+    "advancedSearchCategory": [
+        "All",
+        "Books",
+        "Computers",
+        "Computers >> Desktops",
+        "Computers >> Notebooks",
+        "Computers >> Accessories",
+        "Electronics",
+        "Electronics >> Camera, photo",
+        "Electronics >> Cell phones",
+        "Apparel & Shoes",
+        "Digital downloads",
+        "Jewelry",
+        "Gift Cards"
+    ],
+    "advancedSearchManufacturer": [
+        "All",
+        "Tricentis"
+    ],
+    "newUserRegistration": {
+        "Firstname": "TEST",
+        "Lastname": "USER",
+        "Email": "testuser@tricentis.com",
+        "Password": "TestUser123",
+        "ConfirmPassword": "TestUser123",
+        "WrongEmail": "wrongemail"
+    },
+    "gender": [
+        "Male",
+        "Female"
+    ]
+}

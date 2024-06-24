@@ -1,0 +1,19 @@
+{
+  "name": "cypress-demo-web-shop",
+  "version": "1.0.0",
+  "description": "Test Automation framework on Cypress using Tricentis demo web shop application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.11.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "faker": "^6.6.6"
+  }
+}
