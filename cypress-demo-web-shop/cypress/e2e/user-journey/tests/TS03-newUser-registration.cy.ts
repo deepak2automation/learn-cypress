@@ -1,5 +1,6 @@
 import demowebshop_homepage from "../page-objects/home-page";
 import demowebshop_registerpage from "../page-objects/registration-page";
+const { faker } = require('@faker-js/faker');
 
 describe("Test Suite to verify New User is Registered Successfully in Demo Web Shop. ", () => {
 
@@ -83,7 +84,7 @@ describe("Test Suite to verify New User is Registered Successfully in Demo Web S
         demowebshop_registerpage.lastname.type(this.testdata.newUserRegistration.Lastname)
         demowebshop_registerpage.email.type(this.testdata.newUserRegistration.Email)
 
-        const randomEmail = cy.generateRandomEmail()
+        const randomEmail = cy.generateRandomEmail
         demowebshop_registerpage.password.type(this.testdata.newUserRegistration.Password, { log: false })
         demowebshop_registerpage.confirmPassword.type(this.testdata.newUserRegistration.ConfirmPassword, { log: false })
         demowebshop_registerpage.registerButton.click()

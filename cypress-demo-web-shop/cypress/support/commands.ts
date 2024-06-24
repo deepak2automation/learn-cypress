@@ -24,20 +24,14 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-const faker = require('faker');
+//import { faker } from '@faker-js/faker';
+const { faker } = require('@faker-js/faker');
 Cypress.Commands.add('generateRandomEmail', () => {
-    return internet.email();
+  return faker.internet.email();
 })
 
-// cypress/support/index.ts
-declare global {
-    namespace Cypress {
-      interface Chainable {
-        /**
-         * Custom command to select DOM element by data-cy attribute.
-         * @example cy.generateRandomEmail('test@email.com')
-         */
-        generateRandomEmail(value: string): Chainable<JQuery<HTMLElement>>
-      }
-    }
+declare namespace Cypress {
+  interface Chainable<Subject> {
+    generateRandomEmail(value: string): Chainable<Subject>
   }
+}

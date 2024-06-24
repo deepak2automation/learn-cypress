@@ -19,8 +19,10 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
+import 'cypress-mochawesome-reporter/register';
+
 Cypress.on('uncaught:exception', (err, runnable) => {
-    cy.log(err.message)
+    //cy.log(err.message)
     // returning false here prevents Cypress from failing the test
     return false
 })

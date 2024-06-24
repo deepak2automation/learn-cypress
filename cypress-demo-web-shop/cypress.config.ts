@@ -6,12 +6,14 @@ export default defineConfig({
   viewportHeight: 660,
   watchForFileChanges: false,
   defaultCommandTimeout: 20000,
+  reporter: 'cypress-mochawesome-reporter',
 
   e2e: {
     baseUrl: "https://demowebshop.tricentis.com/",
     testIsolation: false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
 });
