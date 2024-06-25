@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1719328851753' stop='1719328860113'>
+    <name>Test Suite to verify Demo Web Shop Home Page. </name>
+    <title>Test Suite to verify Demo Web Shop Home Page. </title>
+    <test-cases>
+        <test-case start='1719328851753' status='passed' stop='1719328859383'>
+            <name>Test 1: Verify Demo Web Shop Header Logo on Home Page.</name>
+            <title>Test 1: Verify Demo Web Shop Header Logo on Home Page.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1719328859387' status='passed' stop='1719328859552'>
+            <name>Test 2: Verify Links on header section of Demo Web Shop Home Page.</name>
+            <title>Test 2: Verify Links on header section of Demo Web Shop Home Page.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1719328859553' status='passed' stop='1719328859647'>
+            <name>Test 3: Verify Search Box with Search button on header section of Demo Web Shop Home Page.</name>
+            <title>Test 3: Verify Search Box with Search button on header section of Demo Web Shop Home Page.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1719328859652' status='passed' stop='1719328859860'>
+            <name>Test 4: Verify Product Categories List on Demo Web Shop Home Page under List Box.</name>
+            <title>Test 4: Verify Product Categories List on Demo Web Shop Home Page under List Box.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1719328859862' status='passed' stop='1719328860113'>
+            <name>Test 5: Verify Product Categories on Demo Web Shop Home Page in Header Top Menu.</name>
+            <title>Test 5: Verify Product Categories on Demo Web Shop Home Page in Header Top Menu.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

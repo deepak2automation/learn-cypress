@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1719328892629' stop='1719328901908'>
+    <name>Test Suite to verify New User is Registered Successfully in Demo Web Shop. </name>
+    <title>Test Suite to verify New User is Registered Successfully in Demo Web Shop. </title>
+    <test-cases>
+        <test-case start='1719328892629' status='passed' stop='1719328898177'>
+            <name>Test 1: Field level validations on the Register page.</name>
+            <title>Test 1: Field level validations on the Register page.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1719328898184' status='passed' stop='1719328900000'>
+            <name>Test 2: Verify existing user should NOT be allowed to Register again.</name>
+            <title>Test 2: Verify existing user should NOT be allowed to Register again.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1719328900002' status='passed' stop='1719328901908'>
+            <name>Test 2: Verify New User with unique email ID should be allowed to Register.</name>
+            <title>Test 2: Verify New User with unique email ID should be allowed to Register.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

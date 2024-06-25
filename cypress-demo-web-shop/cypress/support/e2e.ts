@@ -19,7 +19,9 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-import 'cypress-mochawesome-reporter/register';
+//import 'cypress-mochawesome-reporter/register';
+
+import '@shelex/cypress-allure-plugin';
 
 Cypress.on('uncaught:exception', (err, runnable) => {
     //cy.log(err.message)

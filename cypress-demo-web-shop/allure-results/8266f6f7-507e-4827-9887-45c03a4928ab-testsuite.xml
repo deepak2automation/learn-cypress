@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1719328870104' stop='1719328876271'>
+    <name>Test Suite to verify Search Functionality in Demo Web Shop Home Page. </name>
+    <title>Test Suite to verify Search Functionality in Demo Web Shop Home Page. </title>
+    <test-cases>
+        <test-case start='1719328870104' status='passed' stop='1719328873787'>
+            <name>Test 1: Verify any user can search product on Demo Web Shop Home Page using Search store.</name>
+            <title>Test 1: Verify any user can search product on Demo Web Shop Home Page using Search store.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1719328873792' status='passed' stop='1719328876271'>
+            <name>Test 2: Verify Advanced search Functionality</name>
+            <title>Test 2: Verify Advanced search Functionality</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
