@@ -1,7 +1,7 @@
 import { data } from "cypress/types/jquery";
 import demowebshop_homepage from "../page-objects/home-page";
 
-describe("Test Suite to verify Demo Web Shop Home Page. ", () => {
+describe("Test Suite to verify Demo Web Shop Home Page. ", { tags: ['@home-page', '@smoke'] }, () => {
 
     beforeEach(() => {
 
@@ -17,7 +17,7 @@ describe("Test Suite to verify Demo Web Shop Home Page. ", () => {
 
     })
 
-    it("Test 1: Verify Demo Web Shop Header Logo on Home Page.", () => {
+    it("Test 1: Verify Demo Web Shop Header Logo on Home Page.", { tags: '@smoke' }, () => {
 
         demowebshop_homepage.headerLogo.should("exist")
         cy.get('div[class="header-logo"]').children("a")
@@ -27,7 +27,7 @@ describe("Test Suite to verify Demo Web Shop Home Page. ", () => {
 
     })
 
-    it("Test 2: Verify Links on header section of Demo Web Shop Home Page.", () => {
+    it("Test 2: Verify Links on header section of Demo Web Shop Home Page.", { tags: '@smoke' }, () => {
 
         //Order in which headers should be displayed
         const headers = ["Register", "Log in", "Shopping cart", "Wishlist"]
@@ -40,7 +40,7 @@ describe("Test Suite to verify Demo Web Shop Home Page. ", () => {
 
     })
 
-    it("Test 3: Verify Search Box with Search button on header section of Demo Web Shop Home Page.", () => {
+    it("Test 3: Verify Search Box with Search button on header section of Demo Web Shop Home Page.", { tags: '@smoke' }, () => {
 
         demowebshop_homepage.searchBox.should("exist")
             .invoke('attr', "value")
@@ -51,7 +51,7 @@ describe("Test Suite to verify Demo Web Shop Home Page. ", () => {
             .should("equal", "Search")
     })
 
-    it("Test 4: Verify Product Categories List on Demo Web Shop Home Page under List Box.", () => {
+    it("Test 4: Verify Product Categories List on Demo Web Shop Home Page under List Box.", { tags: '@smoke' }, () => {
 
         //Order in which categories list should be displayed.
         const categoriesList = ["Books", "Computers", "Electronics", "Apparel & Shoes",
@@ -65,7 +65,7 @@ describe("Test Suite to verify Demo Web Shop Home Page. ", () => {
 
     })
 
-    it("Test 5: Verify Product Categories on Demo Web Shop Home Page in Header Top Menu.", () => {
+    it("Test 5: Verify Product Categories on Demo Web Shop Home Page in Header Top Menu.", { tags: '@smoke' }, () => {
 
         //Order in which categories list should be displayed.
         const categoriesTopMenu = ["Books", "Computers", "Desktops", "Notebooks", "Accessories",

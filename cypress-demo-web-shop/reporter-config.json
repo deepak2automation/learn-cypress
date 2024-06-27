@@ -1,0 +1,17 @@
+{
+    "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",
+    "mochaJunitReporterReporterOptions": {
+        "mochaFile": "cypress/results/junit/e2e-test-results-[hash].xml",
+        "jenkinsMode": true
+    },
+    "cypressMochawesomeReporterReporterOptions": {
+        "reportDir": "cypress/results/cypress-mochawesome-reporter",
+        "charts": true,
+        "reportPageTitle": "Demo Web Shop Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "ignoreVideos": true,
+        "videoOnFailOnly": true,
+        "autoOpen": true
+    }
+}

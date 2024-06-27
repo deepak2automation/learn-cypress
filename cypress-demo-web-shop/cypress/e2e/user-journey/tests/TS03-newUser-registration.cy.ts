@@ -2,7 +2,7 @@ import demowebshop_homepage from "../page-objects/home-page";
 import demowebshop_registerpage from "../page-objects/registration-page";
 const { faker } = require('@faker-js/faker');
 
-describe("Test Suite to verify New User is Registered Successfully in Demo Web Shop. ", () => {
+describe("Test Suite to verify New User is Registered Successfully in Demo Web Shop. ", { tags: ['@registration', '@regression'] }, () => {
 
     beforeEach(() => {
         //Use the cy.fixture() method to pull data from fixture file.
@@ -18,7 +18,7 @@ describe("Test Suite to verify New User is Registered Successfully in Demo Web S
         cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
     })
 
-    it("Test 1: Field level validations on the Register page.", function () {
+    it("Test 1: Field level validations on the Register page.", { tags: '@regression' }, function () {
 
         demowebshop_homepage.headerLinks.contains("Register").click()
 
@@ -57,7 +57,7 @@ describe("Test Suite to verify New User is Registered Successfully in Demo Web S
 
     })
 
-    it("Test 2: Verify existing user should NOT be allowed to Register again.", function () {
+    it("Test 2: Verify existing user should NOT be allowed to Register again.", { tags: '@regression' }, function () {
 
 
         //Fill Personal Details section and click on "Register".
@@ -75,7 +75,7 @@ describe("Test Suite to verify New User is Registered Successfully in Demo Web S
     })
 
 
-    it("Test 2: Verify New User with unique email ID should be allowed to Register.", function () {
+    it("Test 2: Verify New User with unique email ID should be allowed to Register.", { tags: '@regression' }, function () {
 
 
         //Fill Personal Details section with unique email ID and click on "Register".

@@ -2,23 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "*": [
-        "types/*.d.ts"
-      ]
+      "*": ["types/*.d.ts"]
     },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
-    "types": [
-      "@shelex/cypress-allure-plugin"
-    ],
+    "types": ["cypress","@cypress/grep"],
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -35,11 +27,6 @@
       "module": "commonjs"
     }
   },
-  "include": [
-    "**/*"
-  ],
-  "exclude": [
-    "**/node_modules",
-    "**/.*/"
-  ]
+  "include": ["**/*"],
+  "exclude": ["**/node_modules", "**/.*/"]
 }

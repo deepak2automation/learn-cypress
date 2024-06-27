@@ -1,7 +1,7 @@
 import demowebshop_homepage from "../page-objects/home-page";
 import demowebshop_searchpage from "../page-objects/search-page";
 
-describe("Test Suite to verify Search Functionality in Demo Web Shop Home Page. ", () => {
+describe("Test Suite to verify Search Functionality in Demo Web Shop Home Page. ", { tags: ['@search', '@smoke'] }, () => {
 
     beforeEach(() => {
         //Use the cy.fixture() method to pull data from fixture file.
@@ -17,7 +17,7 @@ describe("Test Suite to verify Search Functionality in Demo Web Shop Home Page. 
         cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
     })
 
-    it("Test 1: Verify any user can search product on Demo Web Shop Home Page using Search store.", function () {
+    it("Test 1: Verify any user can search product on Demo Web Shop Home Page using Search store.", { tags: '@smoke' }, function () {
 
         demowebshop_homepage.searchBox.type(this.testdata.searchProduct[0])
         demowebshop_homepage.searchButton.click()
@@ -27,7 +27,7 @@ describe("Test Suite to verify Search Functionality in Demo Web Shop Home Page. 
 
     })
 
-    it("Test 2: Verify Advanced search Functionality", function () {
+    it("Test 2: Verify Advanced search Functionality", { tags: '@smoke' }, function () {
 
         //User gets navigated to Search result page.
         cy.location('pathname').should('eq', '/search')

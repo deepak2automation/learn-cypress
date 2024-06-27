@@ -1,0 +1,17 @@
+{
+    "baseUrl": "https://demowebshop.tricentis.com/",
+    "env": {
+        "environment": "local"
+    },
+    "execTimeout": 60000,
+    "defaultCommandTimeout": 10000,
+    "requestTimeout": 10000,
+    "pageLoadTimeout": 200000,
+    "responseTimeout": 20000,
+    "viewportWidth": 1200,
+    "viewportHeight": 800,
+    "retries": {
+        "runMode": 1,
+        "openMode": 1
+    }
+}

@@ -18,13 +18,15 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-
-//import 'cypress-mochawesome-reporter/register';
-
 import '@shelex/cypress-allure-plugin';
 
+import 'cypress-mochawesome-reporter/register';
+const registerCypressGrep = require('@cypress/grep')
+registerCypressGrep()
+
+//Ignore all console errors in app.
+//Prevents failure of test on console errors while loading website.
 Cypress.on('uncaught:exception', (err, runnable) => {
-    //cy.log(err.message)
     // returning false here prevents Cypress from failing the test
     return false
 })
